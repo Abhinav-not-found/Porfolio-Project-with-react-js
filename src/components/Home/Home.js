@@ -22,8 +22,9 @@ export default function Home() {
             </h1>
             <p>Hi, I'm Abhinav Kumar, a passionate Front-end Developer from<br>
             </br>India. Welcome to my protfolio.</p>
-            <button>Hire me</button>
-            <button className='hire'>Resume</button>
+            <button className='resume'>Resume</button>
+            <button className='hire'>Hire me</button>
+            
           </section>
         </div>
         <div className='social'>

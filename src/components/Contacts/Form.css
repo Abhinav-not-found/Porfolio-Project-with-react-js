@@ -1,0 +1,73 @@
+.outer_area{
+   color: black;
+   background-color: white;
+   margin-top:-60px ;
+   width: 700vh;
+   height: 100vh;
+}
+.outer_area h1{
+padding-top: 60px;
+}
+.outer_area p{
+    margin-left: 50px;
+    font-weight: bolder;
+}
+.outer_area input{
+    margin-left: 50px;
+}
+#abc{
+    display: flex;
+}
+#name_inp{
+    margin-top: -30px;
+    width: 410px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#email_inp{
+    margin-top: -30px;
+    width: 410px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#subject{
+    margin-top: 30px;
+    
+}
+#sub_inp{
+    margin-top: -30px;
+    width: 870px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#message{
+    margin-top: 30px;
+}
+#mesg_inp{
+    color: lightgray;
+    font-weight: lighter;
+    margin-left: 50px;
+    width: 870px;
+    height: 80px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+#btn{
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: #34D18D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
