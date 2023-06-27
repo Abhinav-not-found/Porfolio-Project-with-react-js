@@ -35,3 +35,13 @@ nav img{
     height: 35px;
     width: 35px;
 }
+#play{
+    position: absolute;
+    margin-top: 10px;
+    padding: 10px 13px;
+    border: solid #34D18D;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #34D18D;
+    right: 25px;
+}
