@@ -22,19 +22,19 @@ export default function Home() {
             </h1>
             <p>Hi, I'm Abhinav Kumar, a passionate Front-end Developer from<br>
             </br>India. Welcome to my protfolio.</p>
-            <button className='resume'>Resume</button>
+            <a href='./cv.pdf' download><button className='resume'>Resume</button></a>
             <button className='hire'>Hire me</button>
             
           </section>
         </div>
         <div className='social'>
           
-          <img className='github' src={Github}></img>
+         <a href='https://github.com/Abhinav-not-found' target='blank'> <img className='github' src={Github}></img></a>
           <div>
-            <img className='Linkedin' src={Linkedin}></img>
+            <a href='https://www.linkedin.com/in/abhinav-kumar-not-found' target='blank'><img className='Linkedin' src={Linkedin}></img></a>
           </div>
           <div>
-            <img className='Instagram' src={Instagram}></img>
+            <a href='https://www.instagram.com/abhinav_not_found_/' target='blank'><img className='Instagram' src={Instagram}></img></a>
           </div>
           
           <div className='vl'></div>
