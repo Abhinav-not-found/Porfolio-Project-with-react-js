@@ -9,16 +9,29 @@ export default function Home() {
         <div className='hero'>
           <section>
             <h3>HELLO, I'M A</h3>
-            <h1 className='headingmain'>Front-end Web  
-              <span> D</span>
-              <span>e</span>
-              <span>v</span>
-              <span>e</span>
-              <span>l</span>
-              <span>o</span>
-              <span>p</span>
-              <span>e</span>
-              <span>r</span>
+            <h1 className='headingmain'>  
+
+              <span className='one'>F</span>
+              <span className='one'>r</span>
+              <span className='one'>o</span>
+              <span className='one'>n</span>
+              <span className='one'>t</span>
+              <span className='one'>-</span>
+              <span className='one'>e</span>
+              <span className='one'>n</span>
+              <span className='one'>d</span>
+              <span className='one'> W</span>
+              <span className='one'>e</span>
+              <span className='one'>b</span>
+              <span className='two'> D</span>
+              <span className='two'>e</span>
+              <span className='two'>v</span>
+              <span className='two'>e</span>
+              <span className='two'>l</span>
+              <span className='two'>o</span>
+              <span className='two'>p</span>
+              <span className='two'>e</span>
+              <span className='two'>r</span>
             </h1>
             <p>Hi, I'm Abhinav Kumar, a passionate Front-end Developer from<br>
             </br>India. Welcome to my protfolio.</p>

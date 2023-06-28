@@ -16,9 +16,13 @@ p{
     opacity: 60%;
     margin-bottom: 25px;
 }
-span{
+.one{
     color: #34D18D ;
 }
+.two{
+    color: #34D18D;
+}
+
 .resume{
     margin-right: 15px;
     font-weight: 10px;  
@@ -56,13 +60,24 @@ span{
 
 
 
-.headingmain span{
+.headingmain span .two{
     color: #34D18D ;
 }
-.headingmain span:hover{
+.one{
+    color: white;
+}
+.two:hover{
+    color:white ;
+    cursor: default;
+}
+.one:hover{
+    color: #34D18D;
+    cursor: default;
+}
+/* .headingmain span:hover{
  color: white;
  cursor:default;
-}
+} */
 .social{
     margin-top: -100px;
     margin-left: 50px;

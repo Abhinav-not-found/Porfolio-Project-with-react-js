@@ -1,48 +1,48 @@
-import React, {useRef,useState} from 'react'
-import logo from "./Subtract.png"
-import "./Navbar.css"
-import { Link } from 'react-router-dom'
-import music from "./song3.mp3"
+import React, { useRef, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import logo from "./Subtract.png";
+import music from "./song3.mp3";
+import "./Navbar.css";
 
 export default function Navbar() {
-const [play ,setPlay] = useState(true)
-function handleplay(){
-  if(play){setPlay(false)
-   
-  } 
- else{setPlay(true)}
-    
-}
+  const [play, setPlay] = useState(true);
+  const [click, setClick] = useState(false);
 
-const ref=useRef(null)
-const [click,setClick] =useState(false)
-const handleClick = ()=>{
-  setClick(!click);
-  if(!click){
-    ref.current.play();
-    
+  const ref = useRef(null);
+
+  function handlePlay() {
+    setPlay(!play);
   }
-  else{
-    ref.current.pause();
+
+  function handleClick() {
+    setClick(!click);
+
+    if (!click) {
+      ref.current.play();
+    } else {
+      ref.current.pause();
+    }
   }
-}
-function work(){
-  handleClick()
-  handleplay()
-}
+
+  function work() {
+    handleClick();
+    handlePlay();
+  }
+
   return (
     <div>
-        <nav>
-         <img src={logo}></img>
+      <button id='play' onClick={work}>{play ? "▶" : "|  |"}<audio src={music} ref={ref} loop /></button>
+      <nav>
+        <img src={logo} alt="Logo" />
         
-         <button id='play'onClick={()=>work()}>{`${play?("▶"):("|  |")}`}<audio src={music} ref={ref} loop/></button>
-          
-          <ul>
-            <li><Link to={'/'}>Home</Link></li>
-            <li><Link to={'/About'}>About</Link></li>
-            <li><Link to={'/Contact'}>Contact</Link></li>
-          </ul>
-        </nav>
+        
+
+        <ul>
+          <li><NavLink to='/' >Home</NavLink></li>
+          <li><NavLink to='/About' >About</NavLink></li>
+          <li><NavLink to='/Contact' >Contact</NavLink></li>
+        </ul>
+      </nav>
     </div>
-  )
+  );
 }

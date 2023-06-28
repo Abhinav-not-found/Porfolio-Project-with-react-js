@@ -45,3 +45,16 @@ nav img{
     color: #34D18D;
     right: 25px;
 }
+.active{
+    opacity: 100%;
+    border-bottom: 3px solid #34D18D;
+}
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #34D18D;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+}
