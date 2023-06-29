@@ -1,27 +1,24 @@
-import React from 'react'
-import './Form.css'
-export default function Form() {
-  return (
-    <div>
-      <div className='outer_area'>
-        <h1>Get in touch</h1>
+import React, { Component } from 'react'
+import image from "./Animals.png"
+import "./Form.css"
+export default class Form extends Component {
+  render() {
+    return (
+      <div>
+        <div className='outer'>
+          
+            <form action='https://formspree.io/f/xaygwpyn' method='post' className='form'>
+              <input className='name' type='text' name='Name' placeholder='Name' required></input>
+              <input className='email' type='text' name='Email' placeholder='Email' required></input>
+              <textarea className='message' placeholder='Message'  name='Message' cols="30" rows="10" required></textarea>
+              <button className='submit' type='submit'>Send</button>
+            </form>
+            <div className='image'>
+              <img className='img' src={image}></img>
+            </div>
+          </div>
+       </div>
         
-        <div id='abc' >
-          <div>
-        <p>FULL NAME</p>
-        <input id='name_inp' placeholder='Name'></input>
-        </div>
-        <div>
-        <p>EMAIL ADDRESS</p>
-        <input id='email_inp' placeholder='Email'></input>
-        </div>
-        </div>
-        <p id='subject'>SUBJECT</p>
-        <input id='sub_inp' placeholder='Subject'></input>
-        <p id='message'>MESSAGE </p>
-        <textarea id='mesg_inp' placeholder='Message'></textarea><br></br>
-        <button id='btn'>Send Message</button>
-        </div>
-    </div>
-  )
+    )
+  }
 }

@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <button id='play' onClick={work}>{play ? "▶" : "|  |"}<audio src={music} ref={ref} loop /></button>
+     
       <nav>
         <img src={logo} alt="Logo" />
         
@@ -42,6 +42,7 @@ export default function Navbar() {
           <li><NavLink to='/About' >About</NavLink></li>
           <li><NavLink to='/Contact' >Contact</NavLink></li>
         </ul>
+        <button id='play' onClick={work}>{play ? "▶" : "|  |"}<audio src={music} ref={ref} loop /></button>
       </nav>
     </div>
   );

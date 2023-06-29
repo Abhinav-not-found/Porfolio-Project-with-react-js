@@ -36,7 +36,7 @@ export default function Home() {
             <p>Hi, I'm Abhinav Kumar, a passionate Front-end Developer from<br>
             </br>India. Welcome to my protfolio.</p>
             <a href='./cv.pdf' download><button className='resume'>Resume</button></a>
-            <button className='hire'>Hire me</button>
+            {/* <button className='hire'>Hire me</button> */}
             
           </section>
         </div>

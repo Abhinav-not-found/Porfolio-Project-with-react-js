@@ -57,9 +57,6 @@ p{
    background-color: transparent;
    border-color:#34D18D;
   }
-
-
-
 .headingmain span .two{
     color: #34D18D ;
 }
@@ -79,32 +76,39 @@ p{
  cursor:default;
 } */
 .social{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     margin-top: -100px;
     margin-left: 50px;
+    height: 140px;
     
 }
-.vl{
+.social .vl{
     border-left: 2px solid white;
-    height: 140px;
+    height: 100vh;  
+    margin-left: 10px;
+
 }
-.github{
-    margin-left: -10px;
-    margin-bottom: 5px;
+.social img{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.social .github{
     height: 30px;
     width: 30px;
     mix-blend-mode:screen;
 }
-.linkedin{
-    margin-left: -10px;
+.social .linkedin{
     margin-top: 15px;
-    margin-left: -9px;
     margin-bottom: 5px;
-    height: 300px;
+    height: 30px;
     width: 30px;
     
 }
-.Instagram{
-    margin-left: -5px;
+.social .Instagram{
     margin-top: 15px;
     margin-bottom: 15px;
     height: 17px;
